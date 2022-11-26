@@ -28,8 +28,8 @@ axios(url)
     const imageURL = 'http://openweathermap.org/img/wn/' + icon + '@2x.png';
     
     res.send(
-        `<h1>temprature in ${query} is  ${temperature} degrees Celcius.<h1/>
-         <h3>weather description: ${weatherDescription}<h3/>
+        `<h1>Temprature in ${query} is  ${temperature} degrees Celcius.<h1/>
+         <h3>Weather Description: ${weatherDescription}<h3/>
          <img src = ${imageURL} >`
     );
 }).
