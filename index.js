@@ -7,7 +7,7 @@ import bodyParser from 'body-parser'
 import axios from 'axios'
 
 const app = express();
-const PORT= 3000;
+const PORT= process.env.PORT;
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.get('/', (req, res) =>{
@@ -38,4 +38,4 @@ catch((err)=> res.send(`Status code: ${response.statusCode} <br> ${err} `));
 });
 
 
-app.listen(PORT, () => console.log(`listening on ${PORT}`));
+app.listen(PORT || 3000, () => console.log(`listening on ${PORT}`));
