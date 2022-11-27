@@ -32,10 +32,10 @@ axios(url)
          <h3>Weather Description: ${weatherDescription}<h3/>
          <img src = ${imageURL} >`
     );
-    }).
-catch((response)=> res.send(`Status code: ${response.status} <br> ${response} `));
-    
+  }).
+
+ catch(()=> res.send(`<bold>Please Enter a Valid Place Name</bold>`));  
 });
 
 
-app.listen(PORT || 3000, () => console.log(`listening on ${PORT}`));
+app.listen(PORT || 3000, () => console.log(`listening on 3000`));
