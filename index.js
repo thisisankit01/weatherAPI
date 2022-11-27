@@ -33,7 +33,7 @@ axios(url)
          <img src = ${imageURL} >`
     );
 }).
-catch((err)=> res.send(`Status code: ${response.statusCode} <br> ${err} `));
+catch((err)=> res.send(`Status code: ${response.status} <br> ${err} `));
     
 });
 
