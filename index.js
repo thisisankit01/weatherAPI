@@ -32,8 +32,8 @@ axios(url)
          <h3>Weather Description: ${weatherDescription}<h3/>
          <img src = ${imageURL} >`
     );
-}).
-catch((err)=> res.send(`Status code: ${response.status} <br> ${err} `));
+    }).
+catch((response)=> res.send(`Status code: ${response.status} <br> ${response} `));
     
 });
 
